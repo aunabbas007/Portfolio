@@ -841,3 +841,44 @@ button:hover {
 .skill-card .fa-chart-line { color: #22c55e; }
 .skill-card .fa-java { color: #f97316; }
 .skill-card .fa-github { color: #ffffff; }
+/* ================= FOOTER CONTACT ALIGNMENT FIX ================= */
+
+/* Ensure contact column is centered */
+.footer-col.contact-info {
+  text-align: center;
+}
+
+/* Center contact text with icons */
+.footer-col.contact-info p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Center social icons row */
+.footer-socials {
+  margin-top: 18px;
+  display: flex;
+  justify-content: center;   /* 🔑 THIS FIXES LEFT SHIFT */
+  align-items: center;
+  gap: 16px;
+}
+
+/* Social icon styling (safe override) */
+.footer-socials a {
+  width: 42px;
+  height: 42px;
+  background: #020617;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  transition: 0.3s;
+}
+
+.footer-socials a:hover {
+  background: #2563eb;
+  transform: translateY(-4px);
+}
