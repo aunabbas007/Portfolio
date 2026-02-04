@@ -882,3 +882,108 @@ button:hover {
   background: #2563eb;
   transform: translateY(-4px);
 }
+/* ================= EXPERIENCE ================= */
+
+.experience {
+  padding: 120px 24px;
+  background: linear-gradient(180deg, #ffffff, #eef2ff);
+}
+
+.experience .section-title {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 70px;
+  color: #020617;
+}
+
+.experience-timeline {
+  max-width: 900px;
+  margin: auto;
+  position: relative;
+  padding-left: 34px;
+}
+
+/* Vertical timeline line */
+.experience-timeline::before {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(180deg, #2563eb, #6366f1);
+}
+
+/* Timeline item */
+.exp-item {
+  position: relative;
+  margin-bottom: 70px;
+}
+
+/* Timeline dot */
+.exp-dot {
+  position: absolute;
+  left: -3px;
+  top: 14px;
+  width: 18px;
+  height: 18px;
+  background: #2563eb;
+  border-radius: 50%;
+  box-shadow: 0 0 18px rgba(37,99,235,0.8);
+}
+
+/* Card */
+.exp-card {
+  background: #ffffff;
+  padding: 30px 34px;
+  border-radius: 18px;
+  box-shadow: 0 30px 70px rgba(0,0,0,0.12);
+  transition: all 0.4s ease;
+}
+
+.exp-card h3 {
+  font-size: 22px;
+  color: #1e3a8a;
+  margin-bottom: 6px;
+}
+
+.exp-company {
+  display: block;
+  font-weight: 600;
+  color: #334155;
+}
+
+.exp-duration {
+  display: block;
+  font-size: 14px;
+  color: #2563eb;
+  margin-bottom: 16px;
+}
+
+/* Bullet list */
+.exp-card ul {
+  padding-left: 18px;
+}
+
+.exp-card ul li {
+  margin-bottom: 10px;
+  line-height: 1.7;
+  color: #334155;
+}
+
+/* Hover effect */
+.exp-card:hover {
+  transform: translateX(14px);
+  box-shadow: 0 40px 90px rgba(37,99,235,0.25);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .experience-timeline {
+    padding-left: 22px;
+  }
+
+  .exp-card {
+    padding: 24px;
+  }
+}
