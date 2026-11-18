@@ -1,10 +1,10 @@
 /* Typing Effect */
 window.addEventListener("load", () => {
   const roles = [
-    "Python Backend Engineer",
-    "AI / ML Enthusiast",
-    "FastAPI Developer",
-    "Generative AI Builder"
+    "AI/ML Engineer",
+    "Generative AI Developer",
+    "LLM & RAG Developer",
+    "AI Agents & Backend Builder"
   ];
 
   const typing = document.getElementById("typing");
