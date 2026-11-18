@@ -819,10 +819,15 @@ header {
   color: #facc15;
 }
 
+.footer-col:last-child {
+  display: flex;
+  flex-direction: column;
+}
+
 .footer-socials {
   margin-top: 18px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   gap: 16px;
 }

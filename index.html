@@ -327,8 +327,8 @@
 
     <!-- MANIPAL UNIVERSITY JAIPUR -->
     <div class="education-card reveal">
-      <div class="edu-image edu-image-icon">
-        <i class="fas fa-university"></i>
+      <div class="edu-image">
+        <img src="assets/education/manipal.png" alt="Manipal University Jaipur">
       </div>
 
       <div class="edu-content">
@@ -386,23 +386,38 @@
         <h3>AeroIntel — Aviation Intelligence RAG Platform</h3>
       </div>
       <p class="project-desc">
-        An AI-powered aviation knowledge assistant that uses Retrieval-Augmented Generation to answer questions about aircraft models and international airlines.
+        A production-grade, AI-powered aviation knowledge platform utilizing advanced Retrieval-Augmented Generation (RAG) to provide fast, contextual answers about commercial aircraft models, technical specifications, and international airlines.
       </p>
       <div class="project-features">
-        <h4>Key Highlights:</h4>
+        <h4>Key Technical Highlights:</h4>
         <ul>
-          <li>Document ingestion pipeline with 17 aviation knowledge documents and 48 document chunks.</li>
-          <li>384-dimensional dense embeddings indexed into a high-performance Pinecone vector database.</li>
-          <li>Semantic retrieval pipeline paired with LLM-powered context-aware question answering.</li>
+          <li><strong>Document Ingestion &amp; Chunking:</strong> Automated document processing pipeline ingesting 17 structured aviation domain documents partitioned into 48 semantically coherent document chunks.</li>
+          <li><strong>Dense Embeddings:</strong> High-dimensional representation utilizing 384-dimensional dense sentence embeddings to capture deep domain semantics.</li>
+          <li><strong>Pinecone Vector Database:</strong> Scalable vector search index on Pinecone with low-latency cosine similarity retrieval and namespace isolation.</li>
+          <li><strong>Hybrid Retrieval &amp; BM25:</strong> Dual-channel retrieval architecture integrating dense semantic vector search with sparse keyword search (BM25) for high precision and recall.</li>
+          <li><strong>Reciprocal Rank Fusion (RRF) &amp; Reranking:</strong> Configurable rank-fusion algorithm (RRF) paired with cross-encoder reranking to re-score candidate contexts before prompt augmentation.</li>
+          <li><strong>Google Agent Development Kit (ADK) &amp; MCP:</strong> Built with Google ADK for structured agent tool interactions in the deployed production API, supporting Model Context Protocol (MCP) integrations.</li>
+          <li><strong>LangGraph Workflows:</strong> Multi-agent cyclical graph orchestration in a dedicated development and evaluation workflow for systematic query routing and answer validation.</li>
+          <li><strong>FastAPI, PostgreSQL &amp; Redis:</strong> Asynchronous high-throughput backend built on FastAPI, persistent relational metadata in PostgreSQL, and high-speed query response caching via Redis.</li>
+          <li><strong>AWS Cloud Deployment:</strong> Cloud infrastructure deployed on AWS EC2, containerized with Docker, image registry via Amazon ECR, remote management via AWS Systems Manager (SSM), and TLS termination via Caddy.</li>
         </ul>
       </div>
       <div class="project-tags">
         <span>Python</span>
         <span>RAG</span>
-        <span>LLMs</span>
-        <span>Hugging Face</span>
-        <span>Embeddings</span>
+        <span>Google ADK</span>
+        <span>LangGraph</span>
         <span>Pinecone</span>
+        <span>FastAPI</span>
+        <span>BM25</span>
+        <span>RRF</span>
+        <span>Cross-Encoder</span>
+        <span>PostgreSQL</span>
+        <span>Redis</span>
+        <span>Docker</span>
+        <span>AWS EC2</span>
+        <span>ECR</span>
+        <span>Caddy</span>
       </div>
       <div class="project-actions">
         <a href="https://github.com/aunabbas007/AeroIntel" target="_blank" rel="noopener noreferrer" class="project-btn project-btn-outline">
